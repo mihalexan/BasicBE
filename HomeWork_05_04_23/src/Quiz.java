@@ -30,13 +30,14 @@ public class Quiz {
 
             if (userAnswer == correctAnswer) {
                 System.out.println("Правильно!");
-                counterAnswers++;
+                counterAnswers += 5;
             } else {
+                counterAnswers -= 5;
                 System.out.println("Неправильно. Правильный ответ: " + correctAnswer);
             }
         }
 
-        System.out.println("Игра окончена. Вы ответили правильно на " + counterAnswers + " вопросов из 5.");
+        System.out.println("Игра окончена. Вы заработали " + counterAnswers + " очков ");
     }
     public static int matematicOperation(int operationSymbol, int a, int b){
         switch (operationSymbol) {
