@@ -79,7 +79,7 @@ public class Quiz {
         for (int i = 0; i < arrayCounters.length -1; i++) {
             index = i;
             for (int j = i+1; j < arrayCounters.length; j++) {
-                if(arrayCounters[i] < arrayCounters[j]) && arrayCounters[index] < arrayCounters[j]) {
+                if(arrayCounters[i] < arrayCounters[j] && arrayCounters[index] < arrayCounters[j]) {
                     index = j;
                 }
             }
